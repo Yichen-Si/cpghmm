@@ -1,10 +1,11 @@
 # HMM model for cumulated germline CpG methylation signature
 
 ### Inferred methylation level of autosomal CpGs
-.bed files ready to view on UCSC Genome Browser is available [here](https://drive.google.com/drive/folders/11MQJvsCtgEOecii2u5X5gB-hkP2PIDVq?usp=share_link)
+.bed files ready to view on UCSC Genome Browser and single base pair resolution probabilistic results are available on Zenodo [10.5281/zenodo.10140746](https://zenodo.org/records/10140747)
 
-The scores are posterior probabilities of being hypo-methylated scaled to 0~1000. The estimates are based on TOPMed freeze 8 allele frequencies accessed through [Bravo](https://bravo.sph.umich.edu/freeze8/hg38/).
+The scores in `hypo.cpg.track.bed.gz` are marginal likelihoods of being hypo-methylated scaled to 0~1000. The estimates are based on TOPMed freeze 8 allele frequencies accessed through [Bravo](https://bravo.sph.umich.edu/freeze8/hg38/).
 
+File `GRCh38.auto.cpg.rm_fail.mask_pilot.bravo.bed.gz` and `GRCh38.auto.cpg.rm_fail.mask_pilot.gnomad.bed.gz` contain marginal likelihoods of being hyper- and hypo-methylated estimated from Bravo and gnomAD respectively together with the allele counts used in the analysis. 
 
 ### Running on your own data
 
